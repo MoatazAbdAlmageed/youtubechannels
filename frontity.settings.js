@@ -28,7 +28,8 @@ const settings = {
       name: "@frontity/wp-source",
       state: {
         source: {
-          url: "http://onlinedirectory.local/",
+          // url: "http://onlinedirectory.local/",
+          url: "https://test.frontity.org",
         },
       },
     },
