@@ -31,8 +31,15 @@ const Post = ({ state, actions, libraries }) => {
   return data.isReady ? (
     <Container>
       <div>
-        <Title dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
-
+        <Content>
+          <Title dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
+          <a
+            target="_blank"
+            href={`https://www.youtube.com/results?search_query=${post.title.rendered}`}
+          >
+            اضغط هنا لزيارة القناة
+          </a>
+        </Content>
         {/* Only display author and date on posts */}
         {data.isPost && (
           <div>

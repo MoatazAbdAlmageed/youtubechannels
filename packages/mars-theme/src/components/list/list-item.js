@@ -17,16 +17,7 @@ const Item = ({ state, item, libraries }) => {
 
   return (
     <article>
-      <Link link={item.link}>
-        <Title dangerouslySetInnerHTML={{ __html: item.title.rendered }} />
-      </Link>
-
-      <div>
-        <PublishDate>
-          {" "}
-          <b>{date.toDateString()}</b>
-        </PublishDate>
-      </div>
+      <Title dangerouslySetInnerHTML={{ __html: item.title.rendered }} />
 
       {/*
        * If the want to show featured media in the
@@ -37,7 +28,12 @@ const Item = ({ state, item, libraries }) => {
       )}
 
       <Content>
-        <Html2React html={item.content.rendered} />
+        <a
+          target="_blank"
+          href={`https://www.youtube.com/results?search_query=${item.title.rendered}`}
+        >
+          اضغط هنا لزيارة القناة
+        </a>
       </Content>
     </article>
   );
