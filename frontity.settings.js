@@ -14,9 +14,8 @@ const settings = {
         theme: {
           menu: [
             ["كله", "/"],
-            ["Arabic", "/category/Arabic/"],
-            ["English", "/category/English/"],
-            ["PHP", "/category/php/"],
+            ["عربي", "/category/Arabic/"],
+            ["اجنبي", "/category/English/"],
             ["مش برمجة", "/category/مش-برمجة/"],
           ],
           featured: {
