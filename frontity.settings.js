@@ -30,7 +30,7 @@ const settings = {
         source: {
           // url: "http://onlinedirectory.local/",
           // url: "https://test.frontity.org",
-          url: "https://www.bbcamerica.com/",
+          url: "https://moatazworld.wordpress.com/",
         },
       },
     },
