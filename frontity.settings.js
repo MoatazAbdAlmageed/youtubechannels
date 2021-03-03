@@ -1,5 +1,5 @@
 const settings = {
-  name: "moataz-diary",
+  name: "arabicyoutubechannels",
   state: {
     frontity: {
       url: "https://moatazdiary.herokuapp.com/",

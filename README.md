@@ -1,4 +1,4 @@
-# moataz-diary
+# arabicyoutubechannels
 
 This project was bootstrapped with [Frontity](https://frontity.org/).
 
