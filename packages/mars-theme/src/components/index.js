@@ -51,6 +51,8 @@ export default connect(Theme);
 
 const globalStyles = css`
   body {
+    direction: rtl;
+    text-align: right;
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
       "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;

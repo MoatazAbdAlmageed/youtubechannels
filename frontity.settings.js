@@ -2,9 +2,9 @@ const settings = {
   name: "moataz-diary",
   state: {
     frontity: {
-      url: "https://test.frontity.org",
-      title: "Test Frontity Blog",
-      description: "WordPress installation for Frontity development",
+      url: "https://moatazdiary.herokuapp.com/",
+      title: "يوميات معتز",
+      description: "بعدين .. بعدين",
     },
   },
   packages: [
@@ -13,13 +13,13 @@ const settings = {
       state: {
         theme: {
           menu: [
-            ["Home", "/"],
-            ["Arabic", "/category/arabic/"],
-            ["English", "/category/english/"],
+            ["كله", "/"],
+            ["برمجة", "/category/برمجة/"],
+            ["مش برمجة", "/category/مش-برمجة/"],
           ],
           featured: {
-            showOnList: false,
-            showOnPost: false,
+            showOnList: true,
+            showOnPost: true,
           },
         },
       },
