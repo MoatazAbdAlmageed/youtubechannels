@@ -4,7 +4,7 @@ const settings = {
     frontity: {
       url: "https://moatazdiary.herokuapp.com/",
       title: "يوميات معتز",
-      description: "بعدين .. بعدين",
+      description: "",
     },
   },
   packages: [
