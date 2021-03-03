@@ -28,7 +28,7 @@ const settings = {
       name: "@frontity/wp-source",
       state: {
         source: {
-          url: "https://moatazdiary.wordpress.com/",
+          url: "https://arabicyoutubechannels.wordpress.com/",
         },
       },
     },
