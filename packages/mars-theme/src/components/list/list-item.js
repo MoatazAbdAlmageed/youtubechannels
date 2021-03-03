@@ -21,17 +21,9 @@ const Item = ({ state, item }) => {
       </Link>
 
       <div>
-        {/* If the post has an author, we render a clickable author text. */}
-        {author && (
-          <StyledLink link={author.link}>
-            <AuthorName>
-              By <b>{author.name}</b>
-            </AuthorName>
-          </StyledLink>
-        )}
         <PublishDate>
           {" "}
-          on <b>{date.toDateString()}</b>
+          <b>{date.toDateString()}</b>
         </PublishDate>
       </div>
 
