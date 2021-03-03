@@ -16,15 +16,13 @@ const Item = ({ state, item, libraries }) => {
   const date = new Date(item.date);
 
   return (
-    <article>
-      <Content>
-        <StyledLink
-          target="_blank"
-          href={`https://www.youtube.com/results?search_query=${item.title.rendered}`}
-        >
-          <Title dangerouslySetInnerHTML={{ __html: item.title.rendered }} />
-        </StyledLink>
-      </Content>
+    <StyledArticle>
+      <StyledLink
+        target="_blank"
+        href={`https://www.youtube.com/results?search_query=${item.title.rendered}`}
+      >
+        <Title dangerouslySetInnerHTML={{ __html: item.title.rendered }} />
+      </StyledLink>
       {/*
        * If the want to show featured media in the
        * list of featured posts, we render the media.
@@ -32,13 +30,17 @@ const Item = ({ state, item, libraries }) => {
       {state.theme.featured.showOnList && (
         <FeaturedMedia id={item.featured_media} />
       )}
-    </article>
+    </StyledArticle>
   );
 };
 
 // Connect the Item to gain access to `state` as a prop
 export default connect(Item);
 
+const StyledArticle = styled.article`
+  width: fit-content;
+  block-size: fit-content;
+`;
 const Title = styled.h1`
   font-size: 2rem;
   color: hsl(188deg 51% 52%);
