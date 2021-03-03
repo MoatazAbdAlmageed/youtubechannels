@@ -1,5 +1,5 @@
 const settings = {
-  name: "onlinedirectory",
+  name: "moataz-blog",
   state: {
     frontity: {
       url: "https://test.frontity.org",
@@ -28,7 +28,7 @@ const settings = {
       name: "@frontity/wp-source",
       state: {
         source: {
-          // url: "http://onlinedirectory.local/",
+          // url: "http://moataz-blog.local/",
           // url: "https://test.frontity.org",
           url: "https://moatazworld.wordpress.com/",
         },

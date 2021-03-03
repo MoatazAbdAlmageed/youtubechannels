@@ -1,4 +1,4 @@
-# onlinedirectory
+# moataz-blog
 
 This project was bootstrapped with [Frontity](https://frontity.org/).
 
