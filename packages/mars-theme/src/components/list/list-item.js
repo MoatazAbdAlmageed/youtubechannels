@@ -48,7 +48,7 @@ export default connect(Item);
 
 const Title = styled.h1`
   font-size: 2rem;
-  color: rgba(12, 17, 43);
+  color: hsl(188deg 51% 52%);
   margin: 0;
   padding-top: 24px;
   padding-bottom: 8px;

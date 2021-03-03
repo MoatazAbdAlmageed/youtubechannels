@@ -70,7 +70,7 @@ const Title = styled.h1`
   margin: 0;
   margin-top: 24px;
   margin-bottom: 8px;
-  color: rgba(12, 17, 43);
+  color: hsl(188deg 51% 52%);
 `;
 
 const StyledLink = styled(Link)`
@@ -129,13 +129,16 @@ const Content = styled.div`
   blockquote {
     margin: 16px 0;
     background-color: rgba(0, 0, 0, 0.1);
-    border-left: 4px solid rgba(12, 17, 43);
+    border-left: 4px solid hsl(188deg 51% 52%);
     padding: 4px 16px;
   }
 
   a {
-    color: rgb(31, 56, 197);
-    text-decoration: underline;
+    color: hsl(180deg 51% 52%);
+    text-decoration: none;
+  }
+  a:hover {
+    color: #929eaa;
   }
 
   /* Input fields styles */
