@@ -1,5 +1,5 @@
 const settings = {
-  name: "moataz-blog",
+  name: "moataz-diary",
   state: {
     frontity: {
       url: "https://test.frontity.org",
@@ -28,9 +28,7 @@ const settings = {
       name: "@frontity/wp-source",
       state: {
         source: {
-          // url: "http://moataz-blog.local/",
-          // url: "https://test.frontity.org",
-          url: "https://moatazworld.wordpress.com/",
+          url: "https://moatazdiary.wordpress.com/",
         },
       },
     },

@@ -1,4 +1,4 @@
-# moataz-blog
+# moataz-diary
 
 This project was bootstrapped with [Frontity](https://frontity.org/).
 
