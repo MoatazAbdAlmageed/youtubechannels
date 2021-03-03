@@ -3,7 +3,7 @@ const settings = {
   state: {
     frontity: {
       url: "https://moatazdiary.herokuapp.com/",
-      title: "يوميات معتز",
+      title: "قنوات يوتيوب عربي",
       description: "",
     },
   },
