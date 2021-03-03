@@ -163,7 +163,7 @@ const Content = styled.div`
     margin: 8px 0 4px 0;
 
     &:focus {
-      outline-color: #1f38c5;
+      outline-color: hsl(180deg 51% 52%);
     }
   }
 
@@ -178,13 +178,13 @@ const Content = styled.div`
     touch-action: manipulation;
     cursor: pointer;
     background-image: none;
-    border: 1px solid #1f38c5;
+    border: 1px solid hsl(180deg 51% 52%);
     padding: 12px 36px;
     font-size: 14px;
     line-height: 1.42857143;
     border-radius: 4px;
     color: #fff;
-    background-color: #1f38c5;
+    background-color: hsl(180deg 51% 52%);
   }
 
   /* WordPress Core Align Classes */
