@@ -17,8 +17,14 @@ const Item = ({ state, item, libraries }) => {
 
   return (
     <article>
-      <Title dangerouslySetInnerHTML={{ __html: item.title.rendered }} />
-
+      <Content>
+        <StyledLink
+          target="_blank"
+          href={`https://www.youtube.com/results?search_query=${item.title.rendered}`}
+        >
+          <Title dangerouslySetInnerHTML={{ __html: item.title.rendered }} />
+        </StyledLink>
+      </Content>
       {/*
        * If the want to show featured media in the
        * list of featured posts, we render the media.
@@ -26,15 +32,6 @@ const Item = ({ state, item, libraries }) => {
       {state.theme.featured.showOnList && (
         <FeaturedMedia id={item.featured_media} />
       )}
-
-      <Content>
-        <a
-          target="_blank"
-          href={`https://www.youtube.com/results?search_query=${item.title.rendered}`}
-        >
-          اضغط هنا لزيارة القناة
-        </a>
-      </Content>
     </article>
   );
 };
