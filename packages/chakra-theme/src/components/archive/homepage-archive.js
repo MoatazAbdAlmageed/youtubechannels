@@ -35,6 +35,7 @@ const HomepageArchive = ({ state, libraries }) => {
         </Heading>
 
         <SimpleGrid
+          minChildWidth="200px"
           mt={{ base: "64px", md: "80px" }}
           columns={{ base: 1, md: 2 }}
           spacing="40px"

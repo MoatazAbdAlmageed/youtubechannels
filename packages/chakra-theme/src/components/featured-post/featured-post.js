@@ -1,4 +1,6 @@
 import React from "react";
+import { decode } from "frontity";
+
 import {
   PostContent,
   PostImage,
@@ -21,7 +23,7 @@ export const PrimaryPostPreview = ({ data, ...props }) => {
         <PostOverlay />
         <PostImage {...featured_media} />
         <PostContent>
-          <PostTitle>{title}</PostTitle>
+          <PostTitle>{decode(title)}</PostTitle>
           <PostCategories categories={categories} justifyContent="center" />
         </PostContent>
       </PrimaryPostArticle>
@@ -40,7 +42,7 @@ export const SecondaryPostPreview = ({ data, ...props }) => {
         <PostContent padding="40px" textAlign="left" mt="0">
           <PostCategories justifyContent="flex-start" categories={categories} />
           <PostTitle as="h2" mt="auto" pt="40px" fontSize="1.65rem">
-            {title}
+            {decode(title)}
           </PostTitle>
         </PostContent>
       </SecondaryPostArticle>

@@ -1,4 +1,4 @@
-const title = "Programming YouTube Channels";
+const title = "YouTube Channels";
 const settings = {
   name: "arabicyoutubechannels",
   state: {
