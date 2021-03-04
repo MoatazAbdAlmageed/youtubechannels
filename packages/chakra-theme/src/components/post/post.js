@@ -67,9 +67,10 @@ const Post = ({ state, actions, libraries }) => {
             <p>
               Link will be added here, you can search by channel name{" "}
               <a
+                target="_blank"
                 href={`https://www.youtube.com/results?search_query=${post.title}`}
               >
-                {<Html2React html={post.title} />}
+                <b>{<Html2React html={post.title} />}</b>
               </a>
             </p>
           )}
