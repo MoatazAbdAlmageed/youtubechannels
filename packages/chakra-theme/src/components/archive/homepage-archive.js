@@ -16,7 +16,7 @@ const HomepageArchive = ({ state, libraries }) => {
   return (
     <Box bg="accent.50" as="section">
       <FeaturedPostSection
-        data={firstThreePosts.map(post => formatPostData(state, post))}
+        data={firstThreePosts.map((post) => formatPostData(state, post))}
       />
       <Box
         py={{ base: "64px", md: "80px" }}
@@ -31,7 +31,7 @@ const HomepageArchive = ({ state, libraries }) => {
           fontSize={{ base: "4xl", md: "6xl" }}
           color="accent.400"
         >
-          Latest Posts
+          Latest Channels
         </Heading>
 
         <SimpleGrid
