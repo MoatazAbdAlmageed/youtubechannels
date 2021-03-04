@@ -1,0 +1,33 @@
+{
+  "name": "frontity-chakra-theme",
+  "version": "1.0.2",
+  "description": "A frontity theme made with Chakra UI",
+  "keywords": [
+    "wordpress",
+    "frontity",
+    "frontity-theme",
+    "frontity-amp"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chakra-ui/frontity-chakra-ui-theme.git"
+  },
+  "author": "Segun Adebayo <sage@adebayosegun.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chakra-ui/frontity-chakra-ui-theme/issues"
+  },
+  "homepage": "https://github.com/chakra-ui/frontity-chakra-ui-theme#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^1.3.3",
+    "frontity": "^1.14.2",
+    "react-icons": "^4.2.0",
+    "framer-motion": "^3.9.2",
+    "@frontity/components": "^1.7.1",
+    "@frontity/hooks": "^2.2.0",
+    "@frontity/html2react": "^1.6.1"
+  }
+}
