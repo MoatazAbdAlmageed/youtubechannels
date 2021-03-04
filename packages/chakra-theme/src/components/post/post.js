@@ -114,8 +114,9 @@ const Content = styled.div`
 
   figure {
     margin: 24px auto;
-    /* next line overrides an inline style of the figure element. */
-    width: 100% !important;
+    width: 200px;
+    height: auto;
+    margin: auto;
   }
 
   iframe {
