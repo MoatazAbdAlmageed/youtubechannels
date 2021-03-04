@@ -5,7 +5,7 @@ import MobileMenu from "../menu";
 import { isUrl, omitConnectProps } from "../helpers";
 import { connect } from "frontity";
 
-const SiteHeader = props => (
+const SiteHeader = (props) => (
   <Box
     as="header"
     transition="transform ease .25s"
@@ -13,13 +13,13 @@ const SiteHeader = props => (
     pos="fixed"
     top="0"
     left="0"
-    bg="primary.700"
+    bg="youtube.700"
     zIndex="90"
     {...props}
   />
 );
 
-const SiteHeaderInner = props => (
+const SiteHeaderInner = (props) => (
   <Flex
     align="center"
     width={{ base: "auto", sm: "92%" }}
@@ -34,16 +34,16 @@ const Logo = ({ isImage = true, src }) =>
   isImage ? (
     <Box as="img" src={src} width="120px" />
   ) : (
-      <Box
-        fontSize="2xl"
-        color="white"
-        fontFamily="heading"
-        textTransform="uppercase"
-        fontWeight="bold"
-      >
-        {src}
-      </Box>
-    );
+    <Box
+      fontSize="2xl"
+      color="white"
+      fontFamily="heading"
+      textTransform="uppercase"
+      fontWeight="bold"
+    >
+      {src}
+    </Box>
+  );
 
 const SiteLogo = connect(({ state, ...props }) => {
   // check if the logo is a url,

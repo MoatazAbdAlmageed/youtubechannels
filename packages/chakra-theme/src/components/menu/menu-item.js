@@ -14,13 +14,13 @@ const MenuItem = ({ index, children, mb, link, ...rest }) => (
       borderColor="#ffffff14"
       _hover={{
         bg: "rgba(236, 164, 25, 0.14)",
-        borderColor: "accent.400",
-        color: "accent.400"
+        borderColor: "youtube.400",
+        color: "youtube.400",
       }}
       _focus={{
         bg: "rgba(236, 164, 25, 0.14)",
-        borderColor: "accent.400",
-        color: "accent.400"
+        borderColor: "youtube.400",
+        color: "youtube.400",
       }}
       transition="all 0.3s"
       padding="12px"

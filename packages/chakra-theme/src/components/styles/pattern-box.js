@@ -10,13 +10,13 @@ import tileLight from "../../assets/pattern-tile-light-fade.svg";
 export const PatternBox = ({ showPattern = true, ...props }) => (
   <Box
     as="section"
-    bg="primary.700"
+    bg="youtube.700"
     borderTop="10px solid"
-    borderColor="accent.400"
+    borderColor="youtube.400"
     {...(showPattern && {
       bgImage: `url(${tileGreen})`,
       bgSize: "1018px",
-      bgPos: "top center"
+      bgPos: "top center",
     })}
     {...props}
   />
@@ -25,7 +25,7 @@ export const PatternBox = ({ showPattern = true, ...props }) => (
 /**
  * @param {React.ComponentProps<typeof Box>} props
  */
-export const PatternBoxInner = props => (
+export const PatternBoxInner = (props) => (
   <Section
     py="80px"
     position="relative"
@@ -42,7 +42,7 @@ export const LightPatternBox = React.forwardRef(
   ({ showPattern = true, ...props }, ref) => (
     <Box
       ref={ref}
-      bg="accent.50"
+      bg="youtube.50"
       pt="40px"
       pos="relative"
       zIndex={0}
@@ -59,8 +59,8 @@ export const LightPatternBox = React.forwardRef(
         ...(showPattern && {
           bgSize: "1018px",
           bgPos: "top center",
-          bgImage: `url(${tileLight})`
-        })
+          bgImage: `url(${tileLight})`,
+        }),
       }}
       {...props}
     />

@@ -15,16 +15,16 @@ export const PaginationButton = styled(Link)`
 
   cursor: pointer;
   border: none;
-  background: #333a35;
-  color: #eca419;
+  background: #333;
+  color: #fff;
 
   &:hover {
     background-color: #48584d;
-    color: #eca419;
+    color: #fff;
   }
 
   &[aria-disabled="true"] {
-    background-color: #dfd7c7;
+    background-color: #e9f5f2;
     cursor: auto;
     color: #a0a0a0;
   }
@@ -36,13 +36,13 @@ export const PrevLink = ({
   link,
   ...props
 }) => (
-    <Box width="100%" {...props}>
-      <PaginationButton link={link} aria-label={label} aria-disabled={isDisabled}>
-        <Box width="40px" height="auto" as={IoIosArrowRoundBack} />
-        <span>Older posts</span>
-      </PaginationButton>
-    </Box>
-  );
+  <Box width="100%" {...props}>
+    <PaginationButton link={link} aria-label={label} aria-disabled={isDisabled}>
+      <Box width="40px" height="auto" as={IoIosArrowRoundBack} />
+      <span>Older posts</span>
+    </PaginationButton>
+  </Box>
+);
 
 export const NextLink = ({
   isDisabled,
@@ -50,13 +50,13 @@ export const NextLink = ({
   link,
   ...props
 }) => (
-    <Box width="100%" {...props}>
-      <PaginationButton link={link} aria-label={label} aria-disabled={isDisabled}>
-        <span>Newer posts</span>
-        <Box width="40px" height="auto" as={IoIosArrowRoundForward} />
-      </PaginationButton>
-    </Box>
-  );
+  <Box width="100%" {...props}>
+    <PaginationButton link={link} aria-label={label} aria-disabled={isDisabled}>
+      <span>Newer posts</span>
+      <Box width="40px" height="auto" as={IoIosArrowRoundForward} />
+    </PaginationButton>
+  </Box>
+);
 
 const Pagination = ({ state, actions, libraries, ...props }) => {
   const { totalPages } = state.source.get(state.router.link);
@@ -68,13 +68,13 @@ const Pagination = ({ state, actions, libraries, ...props }) => {
   const nextPageLink = libraries.source.stringify({
     path,
     page: page + 1,
-    query
+    query,
   });
 
   const prevPageLink = libraries.source.stringify({
     path,
     page: page - 1,
-    query
+    query,
   });
 
   // Fetch the next page if it hasn't been fetched yet.

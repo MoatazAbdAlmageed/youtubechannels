@@ -15,7 +15,7 @@ const HomepageArchive = ({ state, libraries }) => {
   const [firstThreePosts, othersPosts] = splitPosts(state, data.items);
 
   return (
-    <Box bg="accent.50" as="section">
+    <Box bg="youtube.50" as="section">
       <FeaturedPostSection
         data={firstThreePosts.map((post) => formatPostData(state, post))}
       />
@@ -30,7 +30,7 @@ const HomepageArchive = ({ state, libraries }) => {
           textTransform="uppercase"
           textAlign="center"
           fontSize={{ base: "4xl", md: "6xl" }}
-          color="accent.400"
+          color="youtube.400"
         >
           Latest Channels
         </Heading>

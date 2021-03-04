@@ -6,19 +6,19 @@ import tile from "../assets/pattern-tile-green.svg";
 export const PatternBox = ({ showPattern = true, ...props }) => (
   <Box
     as="section"
-    bg="primary.700"
+    bg="youtube.700"
     borderTop="10px solid"
-    borderColor="accent.400"
+    borderColor="youtube.400"
     {...(showPattern && {
       bgImage: `url(${tile})`,
       bgSize: "1018px",
-      bgPos: "top center"
+      bgPos: "top center",
     })}
     {...props}
   />
 );
 
-export const PatternBoxInner = props => (
+export const PatternBoxInner = (props) => (
   <Box
     py="80px"
     position="relative"
@@ -33,7 +33,7 @@ export const PatternBoxInner = props => (
 );
 
 // TODO: Add the logic to show this component based on if newsletter package exists
-export const Newsletter = props => (
+export const Newsletter = (props) => (
   <PatternBox {...props}>
     <Box
       py="80px"
@@ -48,7 +48,7 @@ export const Newsletter = props => (
       <Heading color="white" textTransform="uppercase">
         Never miss an update!
       </Heading>
-      <Text mt={4} fontSize="xl" color="accent.400">
+      <Text mt={4} fontSize="xl" color="youtube.400">
         Receive the latest framework releases, new features, blog posts and
         tutorials.
       </Text>
@@ -57,7 +57,7 @@ export const Newsletter = props => (
   </PatternBox>
 );
 
-const SubscribeInput = props => (
+const SubscribeInput = (props) => (
   <Box
     as="input"
     width="100%"
@@ -73,7 +73,7 @@ const SubscribeInput = props => (
   />
 );
 
-const SubscribeButton = props => (
+const SubscribeButton = (props) => (
   <Box
     as="button"
     transition="background-color ease .25s"
@@ -81,7 +81,7 @@ const SubscribeButton = props => (
     fontSize={{ base: "1.625rem" }}
     cursor="pointer"
     textAlign="center"
-    color="accent.400"
+    color="youtube.400"
     flexShrink="0"
     height="60px"
     minWidth="60px"
@@ -89,12 +89,12 @@ const SubscribeButton = props => (
     alignItems="center"
     justifyContent="center"
     _hover={{
-      bg: "accent.400",
-      color: "white"
+      bg: "youtube.400",
+      color: "white",
     }}
     _focus={{
-      bg: "accent.400",
-      color: "white"
+      bg: "youtube.400",
+      color: "white",
     }}
     {...props}
   >
@@ -107,7 +107,7 @@ const SubscribeButton = props => (
   </Box>
 );
 
-const SubscribeForm = props => (
+const SubscribeForm = (props) => (
   <Flex as="form" mt="40px" {...props}>
     <SubscribeInput />
     <SubscribeButton />

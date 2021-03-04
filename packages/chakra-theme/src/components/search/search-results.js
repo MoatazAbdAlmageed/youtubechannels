@@ -12,7 +12,7 @@ const SearchHeader = ({ label, title, ...props }) => (
       as="h6"
       fontWeight="medium"
       textTransform="uppercase"
-      color="accent.400"
+      color="youtube.400"
     >
       {label}
     </Heading>
@@ -41,7 +41,7 @@ const NoResultTitle = ({ query }) => (
   <SearchHeader label={`0 result for`} title={`‘${query}’`} />
 );
 
-const NoResultContent = props => (
+const NoResultContent = (props) => (
   <Box
     p="80px"
     maxW="1400px"
@@ -54,12 +54,12 @@ const NoResultContent = props => (
   />
 );
 
-const SearchForm = connect(props => {
+const SearchForm = connect((props) => {
   const { form, input } = useSearch(props);
   return (
     <Stack mt="40px" as="form" direction="row" align="stretch" {...form}>
       <Input
-        focusBorderColor="accent.400"
+        focusBorderColor="youtube.400"
         placeholder="Search..."
         size="lg"
         rounded="0"
@@ -79,7 +79,7 @@ export const SearchResults = ({ state }) => {
   const isEmpty = data.total === 0;
 
   return (
-    <Box bg="primary.100">
+    <Box bg="youtube.100">
       <PatternBox
         showPattern={state.theme.showBackgroundPattern}
         pb="60px"

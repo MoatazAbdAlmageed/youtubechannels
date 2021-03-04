@@ -17,7 +17,7 @@ function makeProcessor(tag, options) {
       return node;
     },
     // allow for overriding this processors
-    priority: 20
+    priority: 20,
   };
 }
 
@@ -25,9 +25,9 @@ const blockquote = makeProcessor("blockquote", {
   props: () => ({
     variant: "left-accent",
     status: "warning",
-    marginY: "20px"
+    marginY: "20px",
   }),
-  component: Alert
+  component: Alert,
 });
 
 const paragraph = makeProcessor("p", {
@@ -37,10 +37,10 @@ const paragraph = makeProcessor("p", {
     return {
       marginTop: hasParent ? "0" : "10px",
       fontSize: { base: "md", md: "lg" },
-      lineHeight: "tall"
+      lineHeight: "tall",
     };
   },
-  component: Text
+  component: Text,
 });
 
 const figcaption = makeProcessor("figcaption", {
@@ -50,9 +50,9 @@ const figcaption = makeProcessor("figcaption", {
     marginTop: "20px",
     textAlign: "center",
     opacity: 0.8,
-    marginBottom: "40px"
+    marginBottom: "40px",
   }),
-  component: Box
+  component: Box,
 });
 
 // make for h1, h2, h4, h5, h6
@@ -61,18 +61,18 @@ const h3 = makeProcessor("h3", {
     as: "h3",
     marginTop: "40px",
     fontSize: { base: "lg", md: "xl" },
-    textTransform: "uppercase"
+    textTransform: "uppercase",
   }),
-  component: Heading
+  component: Heading,
 });
 
 const PostLink = ({ children, href, rel, ...props }) => (
   <Box
     as="span"
     fontWeight="medium"
-    color="accent.400"
+    color="youtube.400"
     _hover={{
-      textDecoration: "underline"
+      textDecoration: "underline",
     }}
     {...props}
   >
@@ -84,7 +84,7 @@ const PostLink = ({ children, href, rel, ...props }) => (
 
 const a = makeProcessor("a", {
   props: ({ node }) => node.props,
-  component: PostLink
+  component: PostLink,
 });
 
 const processors = [blockquote, paragraph, figcaption, h3, a];

@@ -4,7 +4,7 @@ import React from "react";
 import useSearch from "../hooks/useSearch";
 
 // A11y: Add a hidden search button
-const SearchForm = props => {
+const SearchForm = (props) => {
   const { form, input } = useSearch(props);
   return (
     <Flex
@@ -24,7 +24,7 @@ const SearchForm = props => {
         size="lg"
         fontSize={{ base: "24px", md: "32px" }}
         height="auto"
-        focusBorderColor="primary.400"
+        focusBorderColor="youtube.400"
         py={{ base: 1, md: 3 }}
         {...input}
       />

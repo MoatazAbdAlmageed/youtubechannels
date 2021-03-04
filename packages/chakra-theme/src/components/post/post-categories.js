@@ -8,13 +8,13 @@ export const PostCategory = (props) => (
     transition="background-color ease 0.25s"
     px="5px"
     border="2px solid"
-    borderColor="accent.400"
+    borderColor="youtube.400"
     fontFamily="heading"
     textTransform="uppercase"
     fontWeight="medium"
     display="inline-block"
     _hover={{
-      bg: "accent.400",
+      bg: "youtube.400",
       color: props.color,
     }}
     {...props}

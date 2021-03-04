@@ -22,12 +22,12 @@ const Link = styled(FrontityLink)`
   &:hover {
     &:after {
       bottom: -5px;
-      background-color: ${p => p.theme.colors.accent[400]};
+      background-color: ${(p) => p.theme.colors.youtube[400]};
     }
   }
 `;
 
-export const SiteMenu = props => (
+export const SiteMenu = (props) => (
   <Stack
     ml="50px"
     spacing="50px"

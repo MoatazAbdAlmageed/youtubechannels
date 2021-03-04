@@ -1,14 +1,13 @@
 import Theme from "./components";
 import image from "@frontity/html2react/processors/image";
 import processors from "./components/styles/processors";
-// import { theme } from "@chakra-ui/react";
 
 const chakraTheme = {
   name: "frontity-chakra-theme",
   roots: {
     // In Frontity, any package can add React components to the site.
     // We use roots for that, scoped to the "theme" namespace.
-    theme: Theme
+    theme: Theme,
   },
   state: {
     // State is where the packages store their default settings and other
@@ -33,7 +32,7 @@ const chakraTheme = {
       menu: [],
       featured: {
         showOnArchive: false,
-        showOnPost: true
+        showOnPost: true,
       },
 
       colors: {
@@ -47,7 +46,7 @@ const chakraTheme = {
           600: "#555f58",
           700: "#323c34",
           800: "#232924",
-          900: "#272727"
+          900: "#272727",
         },
         accent: {
           50: "#ede4d3",
@@ -59,13 +58,26 @@ const chakraTheme = {
           600: "#a5710b",
           700: "#775105",
           800: "#483100",
-          900: "#1d0f00"
-        }
+          900: "#1d0f00",
+        },
+        youtube: {
+          // todo add here
+          50: "#FFFFFF",
+          100: "#FAFAFA",
+          200: "#FF0000",
+          300: "#6E6E6E",
+          400: "#232323",
+          500: "#212121",
+          600: "#6E6E6E",
+          700: "#FF0000",
+          800: "#6E6E6E",
+          900: "#FF0000",
+        },
       },
       isSearchModalOpen: false,
       isMobileMenuOpen: false,
-      autoPreFetch: "all"
-    }
+      autoPreFetch: "all",
+    },
   },
   // Actions are functions that modify the state or deal with other parts of
   // Frontity like libraries.
@@ -82,16 +94,16 @@ const chakraTheme = {
       },
       closeSearchModal: ({ state }) => {
         state.theme.isSearchModalOpen = false;
-      }
-    }
+      },
+    },
   },
   libraries: {
     html2react: {
       // Add a processor to html2react so it processes the <img> tags
       // inside the content HTML. You can add your own processors too.
-      processors: [image, ...processors]
-    }
-  }
+      processors: [image, ...processors],
+    },
+  },
 };
 
 export default chakraTheme;

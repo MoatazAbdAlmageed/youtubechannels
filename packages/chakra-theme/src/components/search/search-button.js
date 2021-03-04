@@ -2,7 +2,7 @@ import { Box } from "@chakra-ui/react";
 import React from "react";
 import { IoIosSearch } from "react-icons/io";
 
-const SearchButton = props => (
+const SearchButton = (props) => (
   <Box
     aria-label="Search this site"
     as="button"
@@ -13,11 +13,11 @@ const SearchButton = props => (
     _hover={{ bg: "white" }}
     flexShrink="0"
     boxSize="46px"
-    bg="accent.400"
+    bg="youtube.400"
     ml={{ base: "auto", lg: "3rem" }}
     {...props}
   >
-    <Box boxSize={6} color="primary.700" as={IoIosSearch} />
+    <Box boxSize={6} color="youtube.700" as={IoIosSearch} />
   </Box>
 );
 

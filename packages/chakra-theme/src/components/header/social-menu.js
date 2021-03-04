@@ -18,7 +18,7 @@ export const SocialMenu = ({ menu, ...props }) => (
 
 const SocialMenuItem = ({ icon, label, link, ...props }) => (
   <Box
-    color="accent.400"
+    color="youtube.400"
     transition="all 0.3s"
     _hover={{ color: "white" }}
     as="li"

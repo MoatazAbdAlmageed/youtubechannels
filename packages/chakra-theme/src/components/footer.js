@@ -7,7 +7,7 @@ const FooterSection = (props) => (
   <Box
     as="footer"
     pos="relative"
-    bg="primary.900"
+    bg="youtube.900"
     py={{ base: "32px", lg: "40px" }}
     {...props}
   />
@@ -27,40 +27,41 @@ const FooterSectionItem = (props) => (
   <Box padding="24px" color="white" textAlign="center" {...props} />
 );
 
-const Footer = ({ state }) => (
-  <FooterSection alignSelf="flex-end">
-    <FooterSectionGroup>
-      <FooterSectionItem
-        fontWeight="bold"
-        fontFamily="heading"
-        textTransform="uppercase"
-      >
-        © {new Date().getFullYear()}{" "}
-        <a target="_blank" href="https://frontity.org/">
-          Frontity
-        </a>
-      </FooterSectionItem>
+const Footer = ({ state }) => {
+  return (
+    <FooterSection alignSelf="flex-end">
+      <FooterSectionGroup>
+        <FooterSectionItem
+          fontWeight="bold"
+          fontFamily="heading"
+          textTransform="uppercase"
+        >
+          © {new Date().getFullYear()}{" "}
+          <a target="_blank" href="https://frontity.org/">
+            Frontity
+          </a>
+        </FooterSectionItem>
 
-      <FooterSectionItem borderColor="accent.400">
-        <SocialMenu
-          ml="0"
-          justifyContent="center"
-          menu={state.theme.socialLinks}
-        />
-      </FooterSectionItem>
+        <FooterSectionItem borderColor="youtube.400">
+          <SocialMenu
+            ml="0"
+            justifyContent="center"
+            menu={state.theme.socialLinks}
+          />
+        </FooterSectionItem>
 
-      <FooterSectionItem
-        fontWeight="bold"
-        fontFamily="heading"
-        textTransform="uppercase"
-      >
-        Made with a{" "}
-        <a target="_blank" href="https://frontity.org/">
-          Frontity
-        </a>
-      </FooterSectionItem>
-    </FooterSectionGroup>
-  </FooterSection>
-);
-
+        <FooterSectionItem
+          fontWeight="bold"
+          fontFamily="heading"
+          textTransform="uppercase"
+        >
+          Made with a{" "}
+          <a target="_blank" href="https://frontity.org/">
+            Frontity
+          </a>
+        </FooterSectionItem>
+      </FooterSectionGroup>
+    </FooterSection>
+  );
+};
 export default connect(Footer);
