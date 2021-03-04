@@ -5,7 +5,7 @@ import {
   PostOverlay,
   PostTitle,
   PrimaryPostArticle,
-  SecondaryPostArticle
+  SecondaryPostArticle,
 } from "./components";
 import generateGradient from "./genarate-gradient";
 import { Flex, Box } from "@chakra-ui/react";

@@ -3,7 +3,7 @@ import React from "react";
 import { SocialMenu } from "./header/social-menu";
 import { connect } from "frontity";
 
-const FooterSection = props => (
+const FooterSection = (props) => (
   <Box
     as="footer"
     pos="relative"
@@ -13,7 +13,7 @@ const FooterSection = props => (
   />
 );
 
-const FooterSectionGroup = props => (
+const FooterSectionGroup = (props) => (
   <SimpleGrid
     columns={{ base: 1, md: 3 }}
     maxWidth="1150px"
@@ -23,7 +23,7 @@ const FooterSectionGroup = props => (
   />
 );
 
-const FooterSectionItem = props => (
+const FooterSectionItem = (props) => (
   <Box padding="24px" color="white" textAlign="center" {...props} />
 );
 
@@ -35,7 +35,10 @@ const Footer = ({ state }) => (
         fontFamily="heading"
         textTransform="uppercase"
       >
-        © {new Date().getFullYear()} Frontity
+        © {new Date().getFullYear()}{" "}
+        <a target="_blank" href="https://frontity.org/">
+          Frontity
+        </a>
       </FooterSectionItem>
 
       <FooterSectionItem borderColor="accent.400">
@@ -51,7 +54,10 @@ const Footer = ({ state }) => (
         fontFamily="heading"
         textTransform="uppercase"
       >
-        Made with Frontity
+        Made with a{" "}
+        <a target="_blank" href="https://frontity.org/">
+          Frontity
+        </a>
       </FooterSectionItem>
     </FooterSectionGroup>
   </FooterSection>
