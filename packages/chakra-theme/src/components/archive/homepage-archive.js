@@ -8,6 +8,7 @@ import ArchiveItem from "./archive-item";
 import { PaginationButton } from "./pagination";
 
 const HomepageArchive = ({ state, libraries }) => {
+  const { next, previous } = state.source.get(state.router.link);
   // Get the data of the current list.
   const data = state.source.get(state.router.link);
 
@@ -46,10 +47,19 @@ const HomepageArchive = ({ state, libraries }) => {
           })}
         </SimpleGrid>
 
-        <PaginationButton mt="40px" link="/page/2">
-          More posts
-        </PaginationButton>
+        {next && (
+          <PaginationButton mt="20px" link={next}>
+            Newer posts
+          </PaginationButton>
+        )}
+        {/* If there's a previous page, render this link */}
+        {previous && (
+          <PaginationButton mt="20px" link={previous}>
+            Older posts
+          </PaginationButton>
+        )}
       </Box>
+
       {libraries.newsletter && (
         <Newsletter showPattern={state.theme.showBackgroundPattern} />
       )}
