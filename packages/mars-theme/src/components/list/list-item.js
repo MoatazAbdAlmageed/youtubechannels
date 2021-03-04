@@ -19,7 +19,7 @@ const Item = ({ state, item, libraries }) => {
     <StyledArticle>
       <StyledLink
         target="_blank"
-        href={`https://www.youtube.com/results?search_query=${item.title.rendered}`}
+        href={`https://www.youtube.com/results?search_query=${item.title.rendered}+برمجة`}
       >
         <Title dangerouslySetInnerHTML={{ __html: item.title.rendered }} />
       </StyledLink>

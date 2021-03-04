@@ -18,8 +18,8 @@ const settings = {
             ["اجنبي", "/category/English/"],
           ],
           featured: {
-            showOnList: true,
-            showOnPost: true,
+            showOnList: false,
+            showOnPost: false,
           },
         },
       },
