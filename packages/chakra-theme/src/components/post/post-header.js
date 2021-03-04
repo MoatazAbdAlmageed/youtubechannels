@@ -32,7 +32,7 @@ const PostHeader = ({
     />
     {description && <Text mt={4}>{description}</Text>}
     {/* Don't show the author if we're on a page type */}
-    {/* // TODO:add to setting like show author true , false */}
+    {/* TODO:add to setting like show author true , false */}
     {/* {!isPage && author && (
       <Text fontSize="lg">
         by{" "}
