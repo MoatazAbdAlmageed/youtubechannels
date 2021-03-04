@@ -32,14 +32,15 @@ const PostHeader = ({
     />
     {description && <Text mt={4}>{description}</Text>}
     {/* Don't show the author if we're on a page type */}
-    {!isPage && author && (
+    // TODO:add to setting like show author true , false
+    {/* {!isPage && author && (
       <Text fontSize="lg">
         by{" "}
         <Link fontWeight="bold" color="accent.400" link={author.link}>
           {decode(author.name)}
         </Link>
       </Text>
-    )}
+    )} */}
     {/* Don't show the date if we're on a page type */}
     {!isPage && date && (
       <Text fontSize="md" mt="12px">
