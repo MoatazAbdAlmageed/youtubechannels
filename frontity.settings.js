@@ -16,7 +16,6 @@ const settings = {
             ["كله", "/"],
             ["عربي", "/category/Arabic/"],
             ["اجنبي", "/category/English/"],
-            ["مش برمجة", "/category/مش-برمجة/"],
           ],
           featured: {
             showOnList: true,
