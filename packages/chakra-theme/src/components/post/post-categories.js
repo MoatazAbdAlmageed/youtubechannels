@@ -3,7 +3,7 @@ import React from "react";
 import Link from "../link";
 import { decode } from "frontity";
 
-export const PostCategory = props => (
+export const PostCategory = (props) => (
   <Box
     transition="background-color ease 0.25s"
     px="5px"
@@ -15,7 +15,7 @@ export const PostCategory = props => (
     display="inline-block"
     _hover={{
       bg: "accent.400",
-      color: props.color
+      color: props.color,
     }}
     {...props}
   />
@@ -34,7 +34,7 @@ export const PostCategories = ({
 
   return (
     <Flex flexWrap="wrap" mt="12px" {...props}>
-      {limitCategories.map(category => (
+      {limitCategories.map((category) => (
         <PostCategory color={color} key={category.id} mr="6px" mb="6px">
           <Link
             link={category.link}

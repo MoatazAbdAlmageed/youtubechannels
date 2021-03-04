@@ -41,7 +41,11 @@ const Archive = ({ state }) => {
         mx="auto"
       >
         {/* Iterate over the items of the list. */}
-        <SimpleGrid columns={{ base: 1, md: 2 }} spacing="40px">
+        <SimpleGrid
+          minChildWidth="300px"
+          columns={{ base: 1, md: 2 }}
+          spacing="40px"
+        >
           {data.items.map(({ type, id }) => {
             const item = state.source[type][id];
             return <ArchiveItem key={item.id} item={item} />;
