@@ -6,7 +6,7 @@ const useSearch = ({ state, actions }) => {
   // Keep a reference to the input so we can grab it's value on form submission
   const inputRef = useRef();
 
-  const onSubmit = event => {
+  const onSubmit = (event) => {
     // Prevent page navigation
     event.preventDefault();
 
@@ -33,12 +33,14 @@ const useSearch = ({ state, actions }) => {
     form: {
       role: "search",
       "aria-label": "Search this blog",
-      onSubmit
+      onSubmit,
     },
     input: {
-      defaultValue: data.searchQuery.replace(/\+/g, " "),
-      ref: inputRef
-    }
+      defaultValue: data.searchQuery
+        ? data.searchQuery.replace(/\+/g, " ")
+        : "",
+      ref: inputRef,
+    },
   };
 };
 

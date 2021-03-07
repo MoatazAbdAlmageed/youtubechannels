@@ -1,7 +1,7 @@
 import { Modal, ModalCloseButton, ModalContent } from "@chakra-ui/react";
 import React from "react";
 
-const SearchModal = props => (
+const SearchModal = (props) => (
   <Modal preserveScrollBarGap {...props}>
     <ModalContent
       width="100vw"
