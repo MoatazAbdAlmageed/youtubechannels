@@ -28,7 +28,7 @@ export const PostTags = ({ tags, limit = 3, color = "white", ...props }) => {
 
   return (
     <Flex flexWrap="wrap" mt="12px" {...props}>
-      {limitTags.map((category) => (
+      {tags.map((category) => (
         <PostTag color={color} key={category.id} mr="6px" mb="6px">
           <Link
             link={category.link}
