@@ -49,13 +49,13 @@ const HomepageArchive = ({ state, libraries }) => {
 
         {next && (
           <PaginationButton mt="20px" link={next}>
-            Newer Channels
+            Older Channels
           </PaginationButton>
         )}
         {/* If there's a previous page, render this link */}
         {previous && (
           <PaginationButton mt="20px" link={previous}>
-            Older Channels
+            Newer Channels
           </PaginationButton>
         )}
       </Box>

@@ -32,27 +32,27 @@ export const PaginationButton = styled(Link)`
 
 export const PrevLink = ({
   isDisabled,
-  label = "See older posts",
+  label = "See older channels",
   link,
   ...props
 }) => (
   <Box width="100%" {...props}>
     <PaginationButton link={link} aria-label={label} aria-disabled={isDisabled}>
       <Box width="40px" height="auto" as={IoIosArrowRoundBack} />
-      <span>Older posts</span>
+      <span>Older Channels</span>
     </PaginationButton>
   </Box>
 );
 
 export const NextLink = ({
   isDisabled,
-  label = "See newer posts",
+  label = "See newer channels",
   link,
   ...props
 }) => (
   <Box width="100%" {...props}>
     <PaginationButton link={link} aria-label={label} aria-disabled={isDisabled}>
-      <span>Newer posts</span>
+      <span>Newer Channels</span>
       <Box width="40px" height="auto" as={IoIosArrowRoundForward} />
     </PaginationButton>
   </Box>
