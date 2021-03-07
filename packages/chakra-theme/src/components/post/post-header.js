@@ -2,11 +2,13 @@ import { Box, Heading, Text } from "@chakra-ui/react";
 import React from "react";
 import Link from "../link";
 import PostCategories from "./post-categories";
+import PostTags from "./post-tags";
 import { formatDate } from "../helpers";
 import { decode } from "frontity";
 
 const PostHeader = ({
   heading,
+  tags,
   categories,
   description,
   author,
@@ -22,6 +24,7 @@ const PostHeader = ({
         justifyContent="center"
       />
     )}
+    {tags && <PostTags tags={tags} justifyContent="center" />}
     <Heading
       fontWeight="bold"
       size="2xl"

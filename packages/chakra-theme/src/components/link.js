@@ -25,7 +25,7 @@ const Link = ({
   // Check if the link is an external or internal link
   const isExternal = link && link.startsWith("http");
 
-  const onClick = event => {
+  const onClick = (event) => {
     // Do nothing if it's an external link
     if (isExternal || isDisabled) return;
 
@@ -57,7 +57,7 @@ const Link = ({
       aria-current={ariaCurrent}
       rel={isExternal ? "noopener noreferrer" : rel}
       target={isExternal ? "_blank" : undefined}
-      onMouseEnter={event => {
+      onMouseEnter={(event) => {
         // Prefetch the link's content when the user hovers on the link
         if (!isExternal) actions.source.fetch(link);
         if (props.onMouseEnter) props.onMouseEnter(event);
