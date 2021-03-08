@@ -11,7 +11,6 @@ export const PostTag = (props) => (
     borderColor="youtube.600"
     backgroundColor="youtube.900"
     fontFamily="heading"
-    textTransform="uppercase"
     fontWeight="medium"
     display="inline-block"
     _hover={{

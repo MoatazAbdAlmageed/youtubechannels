@@ -30,7 +30,6 @@ const PostHeader = ({
       size="2xl"
       mt="30px"
       mb={{ base: "20px", lg: "32px" }}
-      textTransform="uppercase"
       dangerouslySetInnerHTML={{ __html: heading }}
     />
     {description && <Text mt={4}>{description}</Text>}

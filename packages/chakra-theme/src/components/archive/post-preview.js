@@ -26,7 +26,7 @@ const PostPreview = ({ data, ...rest }) => {
       )}
 
       <Flex p="10px" flexGrow="1" direction="column">
-        <Heading fontSize="2xl" as="h4" textTransform="uppercase">
+        <Heading fontSize="2xl" as="h4">
           <Link link={link}> {decode(title)}</Link>
         </Heading>
         <Box

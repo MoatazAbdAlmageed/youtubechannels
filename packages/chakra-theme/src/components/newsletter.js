@@ -45,9 +45,7 @@ export const Newsletter = (props) => (
       mx="auto"
       px={6}
     >
-      <Heading color="white" textTransform="uppercase">
-        Never miss an update!
-      </Heading>
+      <Heading color="white">Never miss an update!</Heading>
       <Text mt={4} fontSize="xl" color="youtube.400">
         Receive the latest framework releases, new features, blog posts and
         tutorials.

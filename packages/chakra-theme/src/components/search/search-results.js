@@ -7,24 +7,11 @@ import useSearch from "../hooks/useSearch";
 
 const SearchHeader = ({ label, title, ...props }) => (
   <Box {...props}>
-    <Heading
-      size="md"
-      as="h6"
-      fontWeight="medium"
-      textTransform="uppercase"
-      color="youtube.400"
-    >
+    <Heading size="md" as="h6" fontWeight="medium" color="youtube.400">
       {label}
     </Heading>
 
-    <Heading
-      mt={4}
-      fontWeight="medium"
-      as="h1"
-      textTransform="uppercase"
-      fontSize="3.5rem"
-      color="white"
-    >
+    <Heading mt={4} fontWeight="medium" as="h1" fontSize="3.5rem" color="white">
       {title}
     </Heading>
   </Box>

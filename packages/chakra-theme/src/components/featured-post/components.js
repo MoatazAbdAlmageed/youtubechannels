@@ -13,13 +13,12 @@ export const PostLink = styled(Link)`
   z-index: 1;
 `;
 
-export const PostContent = props => (
+export const PostContent = (props) => (
   <Box
     p="40px"
     width="100%"
     display="flex"
     flexDirection="column"
-    textTransform="uppercase"
     mt="auto"
     textAlign="center"
     color="white"
@@ -28,7 +27,7 @@ export const PostContent = props => (
   />
 );
 
-export const PostTitle = props => (
+export const PostTitle = (props) => (
   <Heading
     as="h1"
     size="2xl"
@@ -39,7 +38,7 @@ export const PostTitle = props => (
   />
 );
 
-export const PostOverlay = props => (
+export const PostOverlay = (props) => (
   <Box
     pointerEvents="none"
     zIndex={1}
@@ -50,7 +49,7 @@ export const PostOverlay = props => (
     background="rgba(0,0,0,0.4)"
     transition="background-color ease 0.25s"
     _groupHover={{
-      background: "rgba(0,0,0,0.6)"
+      background: "rgba(0,0,0,0.6)",
     }}
     {...props}
   />
@@ -70,7 +69,7 @@ export const PostImageWithOverlay = ({ src, alt, srcSet, ...props }) => (
   </Box>
 );
 
-export const PrimaryPostArticle = props => (
+export const PrimaryPostArticle = (props) => (
   <Box
     as="article"
     position="relative"
@@ -85,7 +84,7 @@ export const PrimaryPostArticle = props => (
   />
 );
 
-export const SecondaryPostArticle = props => (
+export const SecondaryPostArticle = (props) => (
   <Box
     as="article"
     position="relative"
@@ -99,7 +98,7 @@ export const SecondaryPostArticle = props => (
   />
 );
 
-export const PostImage = props => (
+export const PostImage = (props) => (
   <Box
     as={Image}
     width="900"

@@ -34,13 +34,7 @@ const Logo = ({ isImage = true, src }) =>
   isImage ? (
     <Box as="img" src={src} width="120px" />
   ) : (
-    <Box
-      fontSize="2xl"
-      color="white"
-      fontFamily="heading"
-      textTransform="uppercase"
-      fontWeight="bold"
-    >
+    <Box fontSize="2xl" color="white" fontFamily="heading" fontWeight="bold">
       {src}
     </Box>
   );

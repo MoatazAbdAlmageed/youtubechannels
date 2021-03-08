@@ -27,7 +27,6 @@ const HomepageArchive = ({ state, libraries }) => {
         mx="auto"
       >
         <Heading
-          textTransform="uppercase"
           textAlign="center"
           fontSize={{ base: "4xl", md: "6xl" }}
           color="youtube.400"

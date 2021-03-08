@@ -10,7 +10,6 @@ export const PostCategory = (props) => (
     border="2px solid"
     borderColor="youtube.400"
     fontFamily="heading"
-    textTransform="uppercase"
     fontWeight="medium"
     display="inline-block"
     _hover={{
