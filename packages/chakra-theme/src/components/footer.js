@@ -43,7 +43,7 @@ const Footer = ({ state }) => {
             >
               <Link link={`/${tag}`}>
                 {decode(
-                  tag.replace("tag", "").replace("/", "").replace("/", "")
+                  tag.replace("tag", "").replace(/\//g, "").toUpperCase()
                 )}
               </Link>
             </Box>
