@@ -22,16 +22,13 @@ export const PostTag = (props) => (
 );
 
 export const PostTags = ({ tags, limit = 3, color = "white", ...props }) => {
-  const limitTags =
-    tags.length > limit ? tags.filter((_, idx) => idx < limit) : tags;
-
   return (
     <Flex flexWrap="wrap" mt="12px" {...props}>
-      {tags.map((category) => (
-        <PostTag color={color} key={category.id} mr="6px" mb="6px">
+      {tags.map((tag) => (
+        <PostTag color={color} key={tag.id} mr="6px" mb="6px">
           <Link
-            link={category.link}
-            dangerouslySetInnerHTML={{ __html: decode(category.name) }}
+            link={tag.link}
+            dangerouslySetInnerHTML={{ __html: decode(tag.name) }}
           />
         </PostTag>
       ))}

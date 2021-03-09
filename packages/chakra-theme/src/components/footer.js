@@ -1,7 +1,7 @@
 import { Box, SimpleGrid } from "@chakra-ui/react";
 import React from "react";
 import { SocialMenu } from "./header/social-menu";
-import { connect } from "frontity";
+import { connect, decode } from "frontity";
 import Link from "./link";
 import tags from "./../data/tags.json";
 
@@ -42,7 +42,9 @@ const Footer = ({ state }) => {
               }}
             >
               <Link link={`/${tag}`}>
-                {tag.replace("tag", "").replace("/", "").replace("/", "")}
+                {decode(
+                  tag.replace("tag", "").replace("/", "").replace("/", "")
+                )}
               </Link>
             </Box>
           </>
