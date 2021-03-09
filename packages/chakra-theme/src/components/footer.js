@@ -61,7 +61,7 @@ const Footer = ({ state }) => {
 
       <FooterSectionItem fontWeight="bold" fontFamily="heading">
         Made with a{" "}
-        <Link target="_blank" link="https:/frontity.org/">
+        <Link target="_blank" link="https://frontity.org/">
           Frontity
         </Link>
       </FooterSectionItem>
