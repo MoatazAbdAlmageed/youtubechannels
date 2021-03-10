@@ -17,14 +17,6 @@ const PostHeader = ({
   ...props
 }) => (
   <Box textAlign="center" {...props}>
-    {categories && (
-      <PostCategories
-        color="black"
-        categories={categories}
-        justifyContent="center"
-      />
-    )}
-    {tags && <PostTags tags={tags} justifyContent="center" />}
     <Heading
       fontWeight="bold"
       size="2xl"
@@ -32,7 +24,19 @@ const PostHeader = ({
       mb={{ base: "20px", lg: "32px" }}
       dangerouslySetInnerHTML={{ __html: heading }}
     />
+
     {description && <Text mt={4}>{description}</Text>}
+
+    {categories && (
+      <PostCategories
+        color="black"
+        categories={categories}
+        justifyContent="center"
+      />
+    )}
+
+    {tags && <PostTags tags={tags} justifyContent="center" />}
+
     {/* Don't show the author if we're on a page type */}
     {/* TODO:add to setting like show author true , false */}
     {/* {!isPage && author && (

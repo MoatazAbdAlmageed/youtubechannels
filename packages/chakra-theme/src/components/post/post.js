@@ -34,6 +34,9 @@ const Post = ({ state, actions, libraries }) => {
   return (
     <LightPatternBox showPattern={state.theme.showBackgroundPattern} ref={ref}>
       <Box pb={{ base: "2rem", lg: "50px" }}>
+        {post.featured_media != null && (
+          <FeaturedMedia id={post.featured_media.id} />
+        )}
         <PostHeader
           mt={{ base: "20px", lg: "4rem" }}
           px={{ base: "32px", md: "0" }}
@@ -50,10 +53,6 @@ const Post = ({ state, actions, libraries }) => {
 
       {/* Look at the settings to see if we should include the featured image */}
       <Section bg="white" pb="80px" size="lg">
-        {post.featured_media != null && (
-          <FeaturedMedia id={post.featured_media.id} />
-        )}
-
         {/* Render the content using the Html2React component so the HTML is processed
        by the processors we included in the libraries.html2react.processors array. */}
         <Content
