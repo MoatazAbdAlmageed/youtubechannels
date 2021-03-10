@@ -11,7 +11,12 @@ import Post from "./post/post";
 import SearchResults from "./search";
 import Title from "./title";
 import FontFace from "./styles/font-face";
-
+import ReactGA from "react-ga";
+// TODO:move to .env
+ReactGA.initialize("G-N6YYMQBVC1");
+if (typeof window != "undefined") {
+  ReactGA.pageview(window.location.pathname + window.location.search);
+}
 // Theme is the root React component of our theme. The one we will export
 // in roots.
 const Theme = ({ state }) => {
@@ -20,9 +25,9 @@ const Theme = ({ state }) => {
 
   const overrides = extendTheme({
     fonts: {
-      heading: "Kelson, system-ui, Helvetica, sans-serif"
+      heading: "Kelson, system-ui, Helvetica, sans-serif",
     },
-    colors: { ...state.theme.colors }
+    colors: { ...state.theme.colors },
   });
 
   return (
