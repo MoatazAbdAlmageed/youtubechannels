@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Head, connect } from "frontity";
 import { decode } from "frontity";
+import ReactGA from "react-ga";
 
 const Title = ({ state }) => {
   // Get data about the current URL.
@@ -35,7 +36,10 @@ const Title = ({ state }) => {
     // Add titles to 404's.
     title = `404 Not Found - ${state.frontity.title}`;
   }
-
+  ReactGA.initialize("UA-191819921-1");
+  useEffect(() => {
+    ReactGA.pageview(title);
+  }, [title]);
   return (
     <Head>
       <title>{title}</title>
