@@ -1,7 +1,10 @@
 import Theme from "./components";
 import image from "@frontity/html2react/processors/image";
 import processors from "./components/styles/processors";
-
+import ReactGA from "react-ga";
+// TODO:move to .env
+ReactGA.initialize("G-N6YYMQBVC1");
+ReactGA.pageview(window.location.pathname + window.location.search);
 const chakraTheme = {
   name: "frontity-chakra-theme",
   roots: {
