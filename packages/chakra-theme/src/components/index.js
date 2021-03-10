@@ -19,7 +19,7 @@ const Theme = ({ state }) => {
   // Get information about the current URL.
   const data = state.source.get(state.router.link);
   // TODO:move to .env
-  ReactGA.initialize("G-N6YYMQBVC1", { debug: true });
+  ReactGA.initialize("UA-191819921-1", { debug: true });
   ReactGA.pageview(state.frontity.initialLink);
 
   const overrides = extendTheme({
