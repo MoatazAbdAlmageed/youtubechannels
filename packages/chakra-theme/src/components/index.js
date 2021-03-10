@@ -1,7 +1,7 @@
 import { Box, ChakraProvider, extendTheme } from "@chakra-ui/react";
 import { connect, Head } from "frontity";
 import Switch from "@frontity/components/switch";
-import React from "react";
+import React, { useEffect } from "react";
 import Archive from "./archive";
 import Footer from "./footer";
 import Header from "./header";
@@ -19,8 +19,10 @@ const Theme = ({ state }) => {
   // Get information about the current URL.
   const data = state.source.get(state.router.link);
   // TODO:move to .env
-  ReactGA.initialize("UA-191819921-1", { debug: true });
-  ReactGA.pageview(state.frontity.initialLink);
+  ReactGA.initialize("UA-191819921-1");
+  useEffect(() => {
+    ReactGA.pageview(state.frontity.initialLink);
+  }, [state.frontity.initialLink]);
 
   const overrides = extendTheme({
     fonts: {
