@@ -13,7 +13,7 @@ export const PostCategory = (props) => (
     fontWeight="medium"
     display="inline-block"
     _hover={{
-      bg: "youtube.400",
+      bg: "youtube.900",
       color: props.color,
     }}
     {...props}
@@ -24,6 +24,10 @@ export const PostCategories = ({
   categories,
   limit = 3,
   color = "white",
+  _hover = {
+    bg: "youtube.50",
+    color: "youtube.900",
+  },
   ...props
 }) => {
   const limitCategories =

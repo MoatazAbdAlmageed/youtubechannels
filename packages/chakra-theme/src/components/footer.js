@@ -22,10 +22,7 @@ const FooterSectionItem = (props) => (
 const Footer = ({ state }) => {
   return (
     <FooterSection alignSelf="flex-end">
-      <FooterSectionItem fontWeight="bold" fontFamily="heading">
-        Tags
-      </FooterSectionItem>
-      <FooterSectionItem fontWeight="bold" fontFamily="heading">
+      <FooterSectionItem>
         {tags.map((tag) => (
           <>
             <Box
@@ -39,6 +36,7 @@ const Footer = ({ state }) => {
               display="inline-block"
               _hover={{
                 bg: "youtube.400",
+                color: "youtube.50",
               }}
             >
               <Link link={`/${tag}`}>

@@ -36,7 +36,7 @@ const PostPreview = ({ data, ...rest }) => {
           dangerouslySetInnerHTML={{ __html: excerpt }}
         />
         <PostCategories
-          color="black"
+          color="youtube.300"
           justify="flex-start"
           categories={categories}
         />
