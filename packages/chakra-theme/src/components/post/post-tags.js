@@ -27,7 +27,7 @@ export const PostTags = ({ tags, limit = 3, color = "white", ...props }) => {
       {tags.map((tag) => (
         <PostTag color={color} key={tag.id} mr="6px" mb="6px">
           <Link
-            link={tag.link}
+            link={`/${tag.taxonomy}/${tag.name.replace(/ /g, "-")}`}
             dangerouslySetInnerHTML={{ __html: decode(tag.name) }}
           />
         </PostTag>
