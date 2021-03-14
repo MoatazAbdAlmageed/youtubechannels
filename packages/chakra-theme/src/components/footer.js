@@ -23,7 +23,7 @@ const Footer = ({ state }) => {
   return (
     <FooterSection alignSelf="flex-end">
       <FooterSectionItem>
-        {tags.map((tag) => (
+        {tags.sort().map((tag) => (
           <>
             <Box
               margin="5px"

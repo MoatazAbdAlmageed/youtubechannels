@@ -2,7 +2,7 @@ function getSrcSet(media) {
   const srcset =
     Object.values(media.media_details.sizes)
       // Get the url and width of each size.
-      .map(item => [item.source_url, item.width])
+      .map((item) => [item.source_url, item.width])
       // Recude them to a string with the format required by `srcset`.
       .reduce(
         (final, current, index, array) =>
@@ -24,14 +24,14 @@ export function getMediaAttributes(state, id) {
     id,
     alt: media.alt_text,
     src: media.source_url,
-    srcSet
+    srcSet,
   };
 }
 
 export function getPostCategories(state, post) {
   const allCategories = state.source.category;
   const categories =
-    post.categories && post.categories.map(catId => allCategories[catId]);
+    post.categories && post.categories.map((catId) => allCategories[catId]);
   return categories ? categories.filter(Boolean) : [];
 }
 
@@ -41,7 +41,7 @@ export function getPostAuthor(state, post) {
 
 export function getPostTags(state, post) {
   const allTags = state.source.tag;
-  const tags = post.tags && post.tags.map(tagId => allTags[tagId]);
+  const tags = post.tags && post.tags.map((tagId) => allTags[tagId]);
   return tags ? tags.filter(Boolean) : [];
 }
 
@@ -62,7 +62,7 @@ export function formatPostData(state, post) {
     link: post.link,
     featured_media: getMediaAttributes(state, post.featured_media),
     content: post.content.rendered,
-    excerpt: post.excerpt.rendered
+    excerpt: post.excerpt.rendered,
   };
 }
 
@@ -87,9 +87,9 @@ export function omitConnectProps(props) {
     "roots",
     "fills",
     "libraries",
-    "getSnapshot"
+    "getSnapshot",
   ];
-  const isGetSnapshot = prop =>
+  const isGetSnapshot = (prop) =>
     typeof prop === "function" && prop.name === "getSnapshot";
 
   for (const prop in props) {
@@ -111,11 +111,11 @@ const monthNames = [
   "August",
   "September",
   "October",
-  "Novemeber",
-  "December"
+  "November",
+  "December",
 ];
 
-const formatDay = day => {
+const formatDay = (day) => {
   const lastLetter = day[day.length - 1];
   if (lastLetter) return `${day}nd`;
   if (lastLetter) return `${day}st`;
@@ -146,6 +146,6 @@ export function debounce(fn) {
     },
     () => {
       cancelAnimationFrame(queued);
-    }
+    },
   ];
 }

@@ -22,7 +22,6 @@ import { FaYoutube } from "react-icons/fa";
 const Post = ({ state, actions, libraries }) => {
   const postData = getPostData(state);
   const post = formatPostData(state, postData);
-
   // Get the html2react component.
   const Html2React = libraries.html2react.Component;
 
