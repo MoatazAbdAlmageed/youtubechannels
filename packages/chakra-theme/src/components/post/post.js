@@ -1,4 +1,4 @@
-import { Box, Divider } from "@chakra-ui/react";
+import { Stack, Box, Divider } from "@chakra-ui/react";
 import { connect, styled } from "frontity";
 import React, { useEffect } from "react";
 import List from "../archive";
@@ -10,7 +10,7 @@ import FeaturedMedia from "./featured-media";
 import PostHeader from "./post-header";
 import PostProgressBar from "./post-progressbar";
 import { getPostData, formatPostData } from "../helpers";
-
+import { FaYoutube } from "react-icons/fa";
 const Post = ({ state, actions, libraries }) => {
   const postData = getPostData(state);
   const post = formatPostData(state, postData);
@@ -48,7 +48,6 @@ const Post = ({ state, actions, libraries }) => {
           isPage={postData.isPage}
         />
       </Box>
-
       {!postData.isPage && <PostProgressBar value={scroll} />}
 
       {/* Look at the settings to see if we should include the featured image */}
@@ -62,7 +61,10 @@ const Post = ({ state, actions, libraries }) => {
           pt="50px"
         >
           {post.content ? (
-            <Html2React html={post.content} />
+            <Stack>
+              <FaYoutube />
+              <Html2React html={post.content} />
+            </Stack>
           ) : (
             <p>
               Link will be added here, you can search by channel name{" "}

@@ -19,6 +19,7 @@
   },
   "prettier": {},
   "dependencies": {
+    "@chakra-ui/icons": "^1.0.6",
     "@frontity/core": "^1.11.0",
     "@frontity/html2react": "^1.6.1",
     "@frontity/mars-theme": "./packages/mars-theme",
@@ -27,6 +28,7 @@
     "chakra-theme": "./packages/chakra-theme",
     "frontity": "^1.14.2",
     "frontity-chakra-theme": "^1.0.2",
-    "react-ga": "^3.3.0"
+    "react-ga": "^3.3.0",
+    "react-icons": "^4.2.0"
   }
 }
