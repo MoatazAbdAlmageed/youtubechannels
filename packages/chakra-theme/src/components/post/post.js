@@ -1,4 +1,12 @@
-import { Stack, Box, Divider } from "@chakra-ui/react";
+import {
+  Stack,
+  Box,
+  Divider,
+  Alert,
+  AlertIcon,
+  AlertTitle,
+  AlertDescription,
+} from "@chakra-ui/react";
 import { connect, styled } from "frontity";
 import React, { useEffect } from "react";
 import List from "../archive";
@@ -66,15 +74,19 @@ const Post = ({ state, actions, libraries }) => {
               <Html2React html={post.content} />
             </Stack>
           ) : (
-            <p>
-              Link will be added here, you can search by channel name{" "}
-              <a
-                target="_blank"
-                href={`https://www.youtube.com/results?search_query=${post.title}`}
-              >
-                <b>{<Html2React html={post.title} />}</b>
-              </a>
-            </p>
+            <Alert status="error">
+              <AlertIcon />
+              <AlertTitle mr={2}>Alert!</AlertTitle>
+              <AlertDescription>
+                Link will be added here, you can search by channel name{" "}
+                <a
+                  target="_blank"
+                  href={`https://www.youtube.com/results?search_query=${post.title}`}
+                >
+                  <b>{<Html2React html={post.title} />}</b>
+                </a>
+              </AlertDescription>
+            </Alert>
           )}
         </Content>
 
