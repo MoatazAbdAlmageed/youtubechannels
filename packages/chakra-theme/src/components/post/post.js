@@ -80,7 +80,7 @@ const Post = ({ state, actions, libraries }) => {
         >
           {post.content ? (
             <Stack>
-              <FaYoutube size="4em" />
+              <FaYoutube size="4em" title={post.title} color="red" />
               <Html2React html={post.content} />
             </Stack>
           ) : (
