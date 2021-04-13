@@ -19,6 +19,8 @@ import PostHeader from "./post-header";
 import PostProgressBar from "./post-progressbar";
 import { getPostData, formatPostData } from "../helpers";
 import { FaYoutube } from "react-icons/fa";
+import Link from "../link";
+
 const Post = ({ state, actions, libraries }) => {
   const postData = getPostData(state);
   const post = formatPostData(state, postData);
@@ -55,6 +57,15 @@ const Post = ({ state, actions, libraries }) => {
           isPage={postData.isPage}
         />
       </Box>
+
+      <Box textAlign="center">
+        <Link
+          link={`https://wordpress.com/post/arabicyoutubechannels.wordpress.com/${post.id}`}
+        >
+          Edit
+        </Link>
+      </Box>
+
       {!postData.isPage && <PostProgressBar value={scroll} />}
 
       {/* Look at the settings to see if we should include the featured image */}
