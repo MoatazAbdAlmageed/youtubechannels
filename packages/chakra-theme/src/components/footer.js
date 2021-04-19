@@ -39,7 +39,7 @@ const Footer = ({ state }) => {
                 color: "youtube.50",
               }}
             >
-              <Link link={`/${tag}`}>
+              <Link link={`/tag/${tag}`}>
                 {tag.replace("tag", "").replace(/\//g, "").toUpperCase()}
               </Link>
             </Box>
