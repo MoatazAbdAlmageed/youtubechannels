@@ -24,9 +24,8 @@ const PostHeader = ({
       mb={{ base: "20px", lg: "32px" }}
       dangerouslySetInnerHTML={{ __html: heading }}
     />
-
     {description && <Text mt={4}>{description}</Text>}
-
+    Content in
     {categories && (
       <PostCategories
         color="black"
@@ -34,8 +33,7 @@ const PostHeader = ({
         justifyContent="center"
       />
     )}
-
-    {tags && <PostTags tags={tags} justifyContent="center" />}
+    Topic(s) {tags && <PostTags tags={tags} justifyContent="center" />}
   </Box>
 );
 

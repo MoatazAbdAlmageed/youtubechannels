@@ -79,8 +79,11 @@ const Post = ({ state, actions, libraries }) => {
           pt="50px"
         >
           {post.content ? (
-            <Stack>
-              <FaYoutube size="4em" title={post.title} color="red" />
+            <Stack textAlign="center">
+              <StyledFaYoutube>
+                Youtube Link
+                <FaYoutube size="6em" title={post.title} color="red" />
+              </StyledFaYoutube>
               <Html2React html={post.content} />
             </Stack>
           ) : (
@@ -119,6 +122,10 @@ export default connect(Post);
 
 // This component is the parent of the `content.rendered` HTML. We can use nested
 // selectors to style that HTML.
+const StyledFaYoutube = styled.div`
+  display: block;
+  margin: auto;
+`;
 const Content = styled.div`
   color: rgba(12, 17, 43, 0.8);
   word-break: break-word;
