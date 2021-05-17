@@ -29,6 +29,7 @@ const settings = {
             ["php", "/tag/php/"],
             ["wordpress", "/tag/wordpress/"],
             ["java", "/tag/java/"],
+            ["english", "/tag/english/"],
           ],
           // the social links
           socialLinks: [
