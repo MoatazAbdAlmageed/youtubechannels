@@ -26,6 +26,7 @@ const settings = {
             // ["English", "/category/english/"],
             ["CS50", "/tag/cs50/"],
             ["JS", "/tag/js/"],
+            ["React", "/tag/react/"],
             ["PHP", "/tag/php/"],
             ["Wordpress", "/tag/wordpress/"],
             ["Java", "/tag/java/"],
