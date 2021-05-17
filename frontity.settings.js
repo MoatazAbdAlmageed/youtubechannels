@@ -22,8 +22,13 @@ const settings = {
           // the top-level navigation labels and links
           menu: [
             ["Home", "/"],
-            ["Arabic", "/category/arabic/"],
-            ["English", "/category/english/"],
+            // ["Arabic", "/category/arabic/"],
+            // ["English", "/category/english/"],
+            ["cs50", "/tag/cs50/"],
+            ["JS", "/tag/js/"],
+            ["php", "/tag/php/"],
+            ["wordpress", "/tag/wordpress/"],
+            ["java", "/tag/java/"],
           ],
           // the social links
           socialLinks: [

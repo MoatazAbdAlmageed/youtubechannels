@@ -89,7 +89,6 @@ const Post = ({ state, actions, libraries }) => {
           ) : (
             <Alert status="error">
               <AlertIcon />
-              <AlertTitle mr={2}>Alert!</AlertTitle>
               <AlertDescription>
                 Link will be added here, you can search by channel name{" "}
                 <a
