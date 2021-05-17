@@ -24,12 +24,12 @@ const settings = {
             ["Home", "/"],
             // ["Arabic", "/category/arabic/"],
             // ["English", "/category/english/"],
-            ["cs50", "/tag/cs50/"],
+            ["CS50", "/tag/cs50/"],
             ["JS", "/tag/js/"],
-            ["php", "/tag/php/"],
-            ["wordpress", "/tag/wordpress/"],
-            ["java", "/tag/java/"],
-            ["english", "/tag/english/"],
+            ["PHP", "/tag/php/"],
+            ["Wordpress", "/tag/wordpress/"],
+            ["Java", "/tag/java/"],
+            ["English", "/tag/english/"],
           ],
           // the social links
           socialLinks: [
