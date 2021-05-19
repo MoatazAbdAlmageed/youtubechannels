@@ -32,7 +32,7 @@ const settings = {
             ["MongoDB", "/tag/mongodb/"],
             ["PHP", "/tag/php/"],
             ["Java", "/tag/java/"],
-            ["Wordpress", "/tag/wordpress/"],
+            ["WordPress", "/tag/wordpress/"],
             ["React", "/tag/react/"],
           ],
           // the social links
