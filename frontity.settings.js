@@ -21,7 +21,7 @@ const settings = {
           showSocialLinks: true,
           // the top-level navigation labels and links
           menu: [
-            ["Home", "/"],
+            // ["Home", "/"],
             // ["Arabic", "/category/arabic/"],
             // ["English", "/category/english/"],
             ["English", "/tag/english/"],
