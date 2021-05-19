@@ -25,13 +25,15 @@ const settings = {
             // ["Arabic", "/category/arabic/"],
             // ["English", "/category/english/"],
             ["English", "/tag/english/"],
-            ["cs", "/tag/cs/"],
+            ["CS", "/tag/cs/"],
             ["CS50", "/tag/cs50/"],
             ["JS", "/tag/js/"],
-            ["React", "/tag/react/"],
+            ["NodeJs", "/tag/nodeJs/"],
+            ["MongoDB", "/tag/mongodb/"],
             ["PHP", "/tag/php/"],
-            ["Wordpress", "/tag/wordpress/"],
             ["Java", "/tag/java/"],
+            ["Wordpress", "/tag/wordpress/"],
+            ["React", "/tag/react/"],
           ],
           // the social links
           socialLinks: [
