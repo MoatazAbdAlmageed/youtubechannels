@@ -18,8 +18,6 @@ const HomepageArchive = ({ state, libraries }) => {
   return (
     <Box bg="youtube.50" as="section">
       <Iframe
-        width="560"
-        height="315"
         src="https://www.youtube.com/embed/fvn35tBVRIw"
         title="YouTube video player"
         frameborder="0"
@@ -80,5 +78,7 @@ const HomepageArchive = ({ state, libraries }) => {
 export default connect(HomepageArchive);
 
 const Iframe = styled.iframe`
+  height: 600px;
+  width: 100%;
   margin: auto;
 `;
