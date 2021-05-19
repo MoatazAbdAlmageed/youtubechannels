@@ -6,6 +6,7 @@ import { formatPostData, splitPosts } from "../helpers";
 import { Newsletter } from "../newsletter";
 import ArchiveItem from "./archive-item";
 import { PaginationButton } from "./pagination";
+import { styled } from "frontity";
 
 const HomepageArchive = ({ state, libraries }) => {
   const { next, previous } = state.source.get(state.router.link);
@@ -16,6 +17,16 @@ const HomepageArchive = ({ state, libraries }) => {
 
   return (
     <Box bg="youtube.50" as="section">
+      <Iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/fvn35tBVRIw"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></Iframe>
+
       <FeaturedPostSection
         data={firstThreePosts.map((post) => formatPostData(state, post))}
       />
@@ -67,3 +78,7 @@ const HomepageArchive = ({ state, libraries }) => {
 };
 
 export default connect(HomepageArchive);
+
+const Iframe = styled.iframe`
+  margin: auto;
+`;
