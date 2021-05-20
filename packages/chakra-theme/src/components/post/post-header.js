@@ -25,7 +25,7 @@ const PostHeader = ({
       dangerouslySetInnerHTML={{ __html: heading }}
     />
     {description && <Text mt={4}>{description}</Text>}
-    Content in
+    Content Language
     {categories && (
       <PostCategories
         color="black"
