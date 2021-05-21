@@ -27,13 +27,13 @@ const settings = {
             ["English", "/tag/english/"],
             ["WordPress", "/tag/wordpress/"],
             ["Freelancing", "/tag/freelancing/"],
-            ["CS", "/tag/cs/"],
-            ["CS50", "/tag/cs50/"],
+            // ["CS50", "/tag/cs50/"],
             ["JS", "/tag/js/"],
-            ["NodeJs", "/tag/nodeJs/"],
-            ["MongoDB", "/tag/mongodb/"],
+            // ["NodeJs", "/tag/nodeJs/"],
+            // ["MongoDB", "/tag/mongodb/"],
             ["PHP", "/tag/php/"],
-            ["React", "/tag/react/"],
+            ["CS", "/tag/cs/"],
+            // ["React", "/tag/react/"],
           ],
           // the social links
           socialLinks: [
