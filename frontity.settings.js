@@ -3,7 +3,7 @@ const settings = {
   name: "arabicyoutubechannels",
   state: {
     frontity: {
-      url: "https://arabicyoutubechannels.herokuapp.com/",
+      url: "https://arabicyoutubechannels.vercel.app/",
       title,
       description: "v1",
     },

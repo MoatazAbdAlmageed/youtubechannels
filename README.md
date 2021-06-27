@@ -1,3 +1,3 @@
 # arabicyoutubechannels
 
-https://arabicyoutubechannels.herokuapp.com/
+https://arabicyoutubechannels.vercel.app/
