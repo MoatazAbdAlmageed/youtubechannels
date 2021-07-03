@@ -38,8 +38,6 @@ const settings = {
           // the social links
           socialLinks: [
             ["github", "https://github.com/MoatazAbdAlmageed/"],
-            ["twitter", "https://twitter.com/MoatazMohammady"],
-            ["facebook", "https://www.facebook.com/moataz.mohammady.3/"],
             ["linkedin", "https://www.linkedin.com/in/moatazabdelmageed/"],
           ],
           // color shades to use in the blog

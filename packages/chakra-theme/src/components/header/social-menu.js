@@ -2,8 +2,6 @@ import { Box, VisuallyHidden } from "@chakra-ui/react";
 import React from "react";
 import { SiteMenu } from "./navigation";
 import {
-  IoLogoTwitter,
-  IoLogoFacebook,
   IoLogoGithub,
   IoLogoLinkedin,
 } from "react-icons/io";
@@ -39,8 +37,6 @@ const SocialMenuItem = ({ icon, label, link, ...props }) => (
 );
 
 const icons = {
-  twitter: IoLogoTwitter,
-  facebook: IoLogoFacebook,
   linkedin: IoLogoLinkedin,
   github: IoLogoGithub,
 };
