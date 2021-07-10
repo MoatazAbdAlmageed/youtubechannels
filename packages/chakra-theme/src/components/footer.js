@@ -4,6 +4,7 @@ import { SocialMenu } from "./header/social-menu";
 import { connect, decode } from "frontity";
 import Link from "./link";
 import tags from "./../data/tags.json";
+import fb from "./../data/fb.js";
 
 const FooterSection = (props) => (
   <Box
@@ -61,6 +62,17 @@ const Footer = ({ state }) => {
           Frontity
         </Link>
       </FooterSectionItem>
+
+      <script src={fb}></script>
+
+      <noscript>
+        <img
+          height="1"
+          width="1"
+          style="display:none"
+          src="https://www.facebook.com/tr?id=2887412331587526&ev=PageView&noscript=1"
+        />
+      </noscript>
     </FooterSection>
   );
 };
