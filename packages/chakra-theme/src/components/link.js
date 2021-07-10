@@ -17,7 +17,12 @@ const Link = ({
   // If we're not in a frontity environment, let's just render the children
   if (state == null)
     return (
-      <a className={className} href={isDisabled ? undefined : "#"} {...props}>
+      <a
+        target="_blank"
+        className={className}
+        href={isDisabled ? undefined : "#"}
+        {...props}
+      >
         {children}
       </a>
     );
@@ -51,6 +56,7 @@ const Link = ({
   return (
     <Box
       as="a"
+      target="_blank"
       href={isDisabled ? undefined : link}
       onClick={onClick}
       className={className}

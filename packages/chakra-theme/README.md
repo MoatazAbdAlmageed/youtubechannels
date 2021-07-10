@@ -63,7 +63,7 @@ const settings = {
           // color shades to use in the blog
           colors: {
             primary: {
-              50: "#e9f5f2",
+              50: "#7e7e7e",
               100: "#d4dcd9",
               200: "#bbc3be",
               300: "#a1aba5",
@@ -102,7 +102,7 @@ export default settings;
 // value of theme.colors
 {
   "primary": {
-    "50": "#e9f5f2",
+    "50": "#7e7e7e",
     "100": "#d4dcd9",
     "200": "#bbc3be",
     "300": "#a1aba5",

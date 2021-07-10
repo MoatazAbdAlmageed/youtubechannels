@@ -19,12 +19,12 @@ export const PaginationButton = styled(Link)`
   color: #fff;
 
   &:hover {
-    background-color: #48584d;
+    background-color: hsl(11deg 100% 62%);
     color: #fff;
   }
 
   &[aria-disabled="true"] {
-    background-color: #e9f5f2;
+    background-color: #7e7e7e;
     cursor: auto;
     color: #a0a0a0;
   }
