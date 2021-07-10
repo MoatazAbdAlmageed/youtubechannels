@@ -24,6 +24,7 @@ const settings = {
             // ["Home", "/"],
             ["Arabic", "/category/arabic/"],
             ["English", "/category/english/"],
+            ["Favorites", "/category/Favorites/"],
             // ["English", "/tag/english/"],
             // ["WordPress", "/tag/wordpress/"],
             // ["Freelancing", "/tag/freelancing/"],
