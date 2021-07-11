@@ -13,7 +13,7 @@ import List from "../archive";
 import useScrollProgress from "../hooks/useScrollProgress";
 import { LightPatternBox } from "../styles/pattern-box";
 import Section from "../styles/section";
-import AuthorBio from "./author-bio";
+// import AuthorBio from "./author-bio";
 import FeaturedMedia from "./featured-media";
 import PostHeader from "./post-header";
 import PostProgressBar from "./post-progressbar";
@@ -105,12 +105,12 @@ const Post = ({ state, actions, libraries }) => {
         <Divider borderBottom="1px solid" my="80px" />
 
         <Section px={{ base: "32px", md: "0" }}>
-          <AuthorBio
+          {/* <AuthorBio
             image={post.author.avatar_urls["96"]}
             name={post.author.name}
             description={post.author.description}
             link={post.author.link}
-          />
+          /> */}
         </Section>
       </Section>
     </LightPatternBox>
