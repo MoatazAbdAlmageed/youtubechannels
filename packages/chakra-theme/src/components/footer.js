@@ -30,7 +30,7 @@ const Footer = ({ state }) => {
               transition="background-color ease 0.25s"
               px="5px"
               border="2px solid"
-              borderColor="youtube.400"
+              borderColor="transparent"
               fontFamily="heading"
               fontWeight="medium"
               display="inline-block"
