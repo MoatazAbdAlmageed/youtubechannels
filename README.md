@@ -1,3 +1,3 @@
-# arabicyoutubechannels
+# Youtube Channels
 
-https://arabicyoutubechannels.vercel.app/
+https://youtubechannels.vercel.app/
