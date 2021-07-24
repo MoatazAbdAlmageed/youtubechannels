@@ -38,7 +38,7 @@ const settings = {
           ],
           // the social links
           socialLinks: [
-            ["github", "https://github.com/MoatazAbdAlmageed/"],
+            ["github", "https://github.com/MoatazAbdAlmageed/youtubechannels"],
             ["linkedin", "https://www.linkedin.com/in/moatazabdelmageed/"],
           ],
           // color shades to use in the blog
