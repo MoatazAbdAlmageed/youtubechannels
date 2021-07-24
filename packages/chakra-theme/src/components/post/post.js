@@ -59,7 +59,7 @@ const Post = ({ state, actions, libraries }) => {
 
       <Box textAlign="center" className="editBtn" hidden="true">
         <Link
-          link={`https://wordpress.com/post/arabicyoutubechannels.wordpress.com/${post.id}`}
+          link={`https://wordpress.com/post/youtubechannels.wordpress.com/${post.id}`}
         >
           Edit
         </Link>
