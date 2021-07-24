@@ -1,9 +1,9 @@
 const title = "YouTube Channels";
 const settings = {
-  name: "arabicyoutubechannels",
+  name: "youtubechannelsdirectory",
   state: {
     frontity: {
-      url: "https://arabicyoutubechannels.vercel.app/",
+      url: "https://youtubechannelsdirectory.vercel.app/",
       title,
       description: "v1",
     },
@@ -38,7 +38,10 @@ const settings = {
           ],
           // the social links
           socialLinks: [
-            ["github", "https://github.com/MoatazAbdAlmageed/youtubechannels"],
+            [
+              "github",
+              "https://github.com/MoatazAbdAlmageed/youtubechannelsdirectory",
+            ],
             ["linkedin", "https://www.linkedin.com/in/moatazabdelmageed/"],
           ],
           // color shades to use in the blog
@@ -75,7 +78,7 @@ const settings = {
       name: "@frontity/wp-source",
       state: {
         source: {
-          url: "https://arabicyoutubechannels.wordpress.com/",
+          url: "https://youtubechannelsdirectory.wordpress.com/",
         },
       },
     },

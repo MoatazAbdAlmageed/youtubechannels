@@ -24,26 +24,25 @@ const Footer = ({ state }) => {
     <FooterSection alignSelf="flex-end">
       <FooterSectionItem>
         {tags.sort().map((tag) => (
-          <>
-            <Box
-              margin="5px"
-              transition="background-color ease 0.25s"
-              px="5px"
-              border="2px solid"
-              borderColor="transparent"
-              fontFamily="heading"
-              fontWeight="medium"
-              display="inline-block"
-              _hover={{
-                bg: "youtube.400",
-                color: "youtube.50",
-              }}
-            >
-              <Link link={`/tag/${tag.replace(" ", "-")}`}>
-                {tag.replace("tag", "").replace(/\//g, "").toUpperCase()}
-              </Link>
-            </Box>
-          </>
+          <Box
+            key={tag}
+            margin="5px"
+            transition="background-color ease 0.25s"
+            px="5px"
+            border="2px solid"
+            borderColor="transparent"
+            fontFamily="heading"
+            fontWeight="medium"
+            display="inline-block"
+            _hover={{
+              bg: "youtube.400",
+              color: "youtube.50",
+            }}
+          >
+            <Link link={`/tag/${tag.replace(" ", "-")}`}>
+              {tag.replace("tag", "").replace(/\//g, "").toUpperCase()}
+            </Link>
+          </Box>
         ))}
       </FooterSectionItem>
 
