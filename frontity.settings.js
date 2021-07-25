@@ -40,7 +40,7 @@ const settings = {
           socialLinks: [
             [
               "github",
-              "https://github.com/MoatazAbdAlmageed/youtubechannelsdirectory",
+              "https://github.com/MoatazAbdAlmageed/youtubechannels
             ],
             ["linkedin", "https://www.linkedin.com/in/moatazabdelmageed/"],
           ],
