@@ -22,9 +22,14 @@ const settings = {
           // the top-level navigation labels and links
           menu: [
             // ["Home", "/"],
-            ["Arabic", "/category/arabic/"],
-            ["English", "/category/english/"],
+            // ["Arabic", "/category/arabic/"],
+            // ["English", "/category/english/"],
             ["Favorites", "/category/Favorites/"],
+            
+            ["CS", "/tag/CS/"],
+            ["Back-end", "/tag/Back-end/"],
+            ["Front-end", "/tag/Front-end/"],
+            ["Devops", "/tag/Devops/"],
             // ["English", "/tag/english/"],
             // ["WordPress", "/tag/wordpress/"],
             // ["Freelancing", "/tag/freelancing/"],
