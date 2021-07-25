@@ -25,7 +25,7 @@ const settings = {
             // ["Arabic", "/category/arabic/"],
             // ["English", "/category/english/"],
             ["Favorites", "/category/Favorites/"],
-            
+
             ["CS", "/tag/CS/"],
             ["Back-end", "/tag/Back-end/"],
             ["Front-end", "/tag/Front-end/"],
@@ -43,10 +43,7 @@ const settings = {
           ],
           // the social links
           socialLinks: [
-            [
-              "github",
-              "https://github.com/MoatazAbdAlmageed/youtubechannels
-            ],
+            ["github", "https://github.com/MoatazAbdAlmageed/youtubechannels"],
             ["linkedin", "https://www.linkedin.com/in/moatazabdelmageed/"],
           ],
           // color shades to use in the blog
